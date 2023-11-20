@@ -1,0 +1,47 @@
+
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+
+{% block title%}
+Друг
+{% endblock %}
+
+{% block banner1 %}
+      <div class="container-cont">
+            <div class="box-1">
+                <h1 class="title-1">Наши контакты</h1>
+            </div>
+
+        </div>
+
+      <div class="zag-about">
+    <h2>Наш салон</h2>
+</div>
+<div class="dost">
+ <img class="photo-1" src ="static/main/img/f0ed3ac0-6402-45a5-ab42-711286351ee1-kol.jpg" style="height:700px; width:1500px">
+</div>
+
+<section class="cont">
+
+    <div class="title">
+        <h4> Приморский край, Владивосток, улица Калинина, 14</h4>
+        <h2>Номер</h2>
+    </div>
+    <div id ='map' class="map">
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=d9568a9f-0389-4fdb-8891-c5d168f6b388&lang=ru_RU" type="text/javascript">
+
+        </script>
+    </div>
+    <div class="ex">
+        <img src="static/main/img/drug.png"  style="height:100px;">
+        <p>Здесь можно нас найти</p>
+    </div>
+      </div>
+</section>
+{% endblock %}
+
+
+
+
