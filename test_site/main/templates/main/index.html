@@ -1,0 +1,159 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+{% block title%}
+FRESHSTART
+{% endblock %}
+
+{% block banner1 %}
+
+<section class="banner">
+
+
+        <h1 class="title-main">Сделаем лучший сайт для вас!</h1>
+    </div>
+</section>
+
+{% endblock %}
+
+
+   {% block banner2 %}
+<section class="grid">
+    <div class="grid-item grid-item-title">
+        <h2>Наши услуги</h2>
+    </div>
+    <div class="grid-item grid-item-img">
+        <img src="static/main/img/vecteezy_cute-cat.png" style="height: 175px; width: 175px">
+    </div>
+    <div class="grid-item grid-item-serv">
+        <div class="bg-white">
+
+            <div class="grid-title">
+                <p>Название</p>
+            </div>
+
+             <div class="thumb">
+                <img src="static/main/img/dog.png" style="height: 70px; width: 70px">
+            </div>
+        </div>
+    </div>
+    <div class="grid-item grid-item-serv">
+        <div class="bg-white">
+
+            <div class="grid-title">
+                <p>Название</p>
+            </div>
+
+             <div class="thumb">
+                <img src="static/main/img/cat.png" style="height: 70px; width: 70px">
+            </div>
+        </div>
+    </div>
+    <div class="grid-item grid-item-serv">
+        <div class="bg-white">
+
+            <div class="grid-title">
+                <p>Обучение грумингу</p>
+            </div>
+
+             <div class="thumb">
+                <img src="static/main/img/graduation-hat.png" style="height: 70px; width: 70px">
+            </div>
+        </div>
+    </div>
+    <div class="grid-item grid-item-serv">
+        <div class="bg-white">
+
+            <div class="grid-title">
+                <p>Озона-терапия и spa-уход</p>
+            </div>
+
+             <div class="thumb">
+                <img src="static/main/img/bubbles.png" style="height: 70px; width: 70px">
+            </div>
+        </div>
+    </div>
+    <div class="grid-item grid-item-serv">
+        <div class="bg-white">
+
+            <div class="grid-title">
+                <p>УЗ чистка зубов</p>
+            </div>
+
+             <div class="thumb">
+                <img src="static/main/img/tooth.png" style="height: 70px; width: 70px">
+            </div>
+        </div>
+    </div>
+    <div class="grid-serv-btn">
+        <a href="/servs">Подробнее об услугах</a>
+    </div>
+</section>
+
+
+
+
+    {% endblock %}
+
+
+   {% block banner3 %}
+{% endblock %}
+
+   {% block banner4 %}
+<section class="works">
+
+        <h1>Наши работы</h1>
+<div class="container">
+
+      <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+          <a href="static/main/img/1.jpg">
+
+         <img src="static/main/img/1.jpg"  alt="1"  style="height:450px; width:800px">
+          </a>
+      </div>
+      <div class="swiper-slide">
+          <a href="static/main/img/2.jpg">
+          <img src="static/main/img/2.jpg"  alt ="2" style="height:450px; width:800px">
+      </a>
+      </div>
+      <div class="swiper-slide">
+          <a href="static/main/img/3.jpg">
+          <img src="static/main/img/3.jpg"  alt ="3" style="height:450px;width:800px">
+      </a>
+      </div>
+      <div class="swiper-slide">
+          <a href="static/main/img/4.jpg">
+          <img src="static/main/img/4.jpg"  alt ="4" style="height:450px; width:800px">
+      </a>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+</div>
+     </div>
+</section>
+{% endblock %}
+
+   {% block banner5 %}
+<section class="cont">
+
+    <div class="title">
+        <h4> Приморский край, Владивосток, улица Калинина, 14</h4>
+        <h2>+7 (914) 704-82-17</h2>
+    </div>
+    <div id ='map' class="map">
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=d9568a9f-0389-4fdb-8891-c5d168f6b388&lang=ru_RU" type="text/javascript">
+
+        </script>
+    </div>
+
+      </div>
+</section>
+{% endblock %}
