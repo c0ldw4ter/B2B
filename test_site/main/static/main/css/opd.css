@@ -1,0 +1,396 @@
+/* FROM THE BEGINING! */
+/* Reset some default styles to ensure consistency */
+body,
+h1,
+h2,
+p,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color and some padding to the body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e6ffe6;
+    /* Light green background */
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+.grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50;
+    /* Dark green header background */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.grid-item {
+    text-align: center;
+    color: rgb(50, 70, 43);
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 0 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.grid-item:hover {
+    color: #a6e262;
+    /* Light green hover color */
+}
+.grid-item-serv {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+.grid-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.grid-item-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.grid-item-img img:hover {
+    transform: scale(1.1);
+    }
+.grid-serv-btn a{
+    color:#000;
+    text-decoration:none;
+    text-align:center;
+    cursor:pointer;
+}
+
+.grid-serv-btn{
+    border-radius:20px;
+    background-color:#fff;
+    margin:0 auto;
+    margin-top:40px;
+    grid-column:2/5;
+    padding:20px;
+    display:inline-block;
+    line-height:60px;
+    padding 0px 30px;
+    top:0;
+    position:relative;
+    box-shadow:0 5px 0px #3c354a;
+    transition-duration:0.5s;
+}
+.grid-serv-btn:hover{
+    top: 2px;
+    box-shadow: 0 3px 0 px #3c354a;
+    background-color:#00be54;
+}
+
+
+
+
+/* Style for the header */
+.header {
+    background-color: #3e8d42; /* Dark green header background */
+    color: #fff; /* Text color */
+    padding: 10px 30px; /* Padding for the header */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+    border-radius: 10px;
+}
+/* Navigation styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 60px; /* Adjust the height as needed */
+}
+.txt {
+    text-decoration: none;
+    font-size: 1.7em;
+    margin-left: 10px;
+    font-weight: 900;
+}
+.nav-lin ul {
+    list-style: none;
+    margin: 0;
+    padding: 10;
+    display: flex;
+}
+.nav-lin li {
+    margin-right:40px;
+    display: flex;
+}
+.nav-lin a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3em;
+    transition: color 0.1s ease-in-out;
+}
+.nav-lin a:hover {
+    color: #8BC34A; /* Light green hover color */
+}
+.phone {
+    font-size: 1.2em;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-lin {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #4CAF50; /* Dark green background for mobile menu */
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-lin.active {
+        display: flex;
+    }
+
+    .nav-lin li {
+        margin: 10px 0;
+    }
+}
+
+
+/* Styles for banner4 (Works section) */
+.works {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.works h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #4CAF50; /* Dark green color */
+}
+.container {
+    position: relative;
+}
+.mySwiper {
+    width: 100%;
+    overflow: hidden;
+}
+.swiper-wrapper {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+.swiper-slide {
+    flex: 0 0 auto;
+    box-sizing: border-box;
+}
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    background-color: #4CAF50; /* Dark green color */
+    color: #fff;
+    border-radius: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid #fff; /* White border around buttons */
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: #8BC34A; /* Light green hover color */
+}
+
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: #4CAF50; /* Dark green color */
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff; /* White border around bullets */
+}
+.swiper-pagination-bullet-active {
+    background-color: #8BC34A; /* Light green active color */
+}
+
+
+/* Style the banner section */
+.banner {
+    text-align: center;
+    padding: 100px;
+    background-color: #56ad59;
+    /* Dark green banner background */
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Styles for banner1 */
+.container-serv,
+.box-2,
+.title-2 {
+    font-family: 'Montserrat', sans-serif;
+    /* Add any additional styles for these elements */
+}
+
+/* Styles for banner2 */
+.container-serv-our,
+.container-serv-our h2,
+.serv-photo img {
+    font-family: 'Montserrat', sans-serif;
+    /* Add any additional styles for these elements */
+}
+
+/* Styles for banner4 (Works section) */
+.works h1 {
+    font-family: 'Montserrat', sans-serif;
+    /* Add any additional styles for this element */
+}
+
+
+/* Styles for the footer */
+footer {
+    background-color: #498d42; /* Background color for the footer */
+    color: #fff; /* Text color for the footer */
+    padding: 20px; /* Padding for the footer content */
+    text-align: center; /* Center-align text within the footer */
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.i {
+    margin-right: 20px; /* Add some space between the logo and text */
+}
+
+.foo-contact p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Add more styles as needed for your specific design */
+/* Styles for the above-footer section */
+.cont {
+    background-color: #5bad5a; /* Background color for the above-footer section */
+    color: #fff; /* Text color for the above-footer section */
+    padding: 20px; /* Padding for the above-footer content */
+    text-align: center; /* Center-align text within the above-footer section */
+}
+
+.cont .title {
+    margin-bottom: 20px; /* Add some space between the title and other content */
+}
+
+/* Add more styles as needed for your specific design */
+
+.map{
+    display:flex;
+    width:1200px;
+    height:300px;
+    background-color:#fff;
+    margin:0 auto;
+}
+
+.zag-about{
+    display:flex;
+    justify-content:center;
+    padding-top:100px;
+}
+
+
+.fixed{
+    position:fixed;
+    width:100%;
+    left:0;
+    top:0;
+    z-index:2;
+
+}
+
+
+
+
+body::-webkit-scrollbar{
+    width: 0.50em;
+
+}
+body::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background: #5bad5a;
+
+}
+body::-webkit-scrollbar-track {
+    background: #191919;
+
+}
+
+
+
+
+.nav-lin li:hover{
+    z-index:10;
+    transition:0.5s;
+    scale:1.3
+
+
+
+}
+
+.container-serv-our {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.one-pg,
+.lots-pg,
+.str-st,
+.free {
+    margin-bottom: 20px; /* добавляет отступ снизу между блоками */
+}

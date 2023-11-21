@@ -140,7 +140,7 @@ function init() {
 let placemark = new ymaps.Placemark(center, {},{
 
     iconLayout: 'default#image',
-    iconImageHref: '/static/main/img/apple-touch-icon.png',
+    iconImageHref: '/static/main/img/logo.png',
     iconImageSize: [40,40],
     iconImageOffset: [0,0]
 
