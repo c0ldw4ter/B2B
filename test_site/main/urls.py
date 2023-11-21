@@ -5,4 +5,3 @@ urlpatterns = [
     path('servs', views.serv),
     path('cont', views.cont),
 ]
-    ]
