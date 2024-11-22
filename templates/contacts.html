@@ -1,0 +1,85 @@
+{% extends 'base.html'  %}
+{%load static%}
+
+{% block title %}
+ГрузПрофСервис-Контакты
+{% endblock %}
+
+{% block banner %}
+
+<div class="contact-main">
+    <div class="parallax-cont" data-parallax="scroll" data-z-index="1" data-image-src="{%static 'main/cont.jpg' %}">
+        <h2 class="title">Контакты</h2>
+    </div>
+</div>
+
+
+{% endblock %}
+
+
+
+
+
+
+
+{% block about %}
+<!--<div class="contact-main">
+    <div class="contentBox-main">
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="500" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=690087%2C%D0%B3.%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%B2%D0%BE%D1%81%D1%82%D0%BE%D0%BA%2C%D1%83%D0%BB.%D0%A1%D0%B0%D0%B1%D0%B0%D0%BD%D0%B5%D0%B5%D0%B2%D0%B013&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com/nordvpn-coupon/"></a></div><style>iframe {width:100%;height:100%;}</style></div>
+
+    </div>-->
+<div class="contact-main">
+    <div class="contentBox-main">
+
+  <div class="map-responsive">
+<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJm98AyU2Ss18Rgows7b0DuTE&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" allowfullscreen></iframe>
+  </div>
+<div class="texsts-map">
+
+        <p>г.Владивосток, ул.Сабанеева13, Офис №181, 690087</p>
+
+    </div>
+
+    </div>
+
+
+<div class="texsts">
+        <h2>Контактный номер:</h2>
+        <p>272-07-95</p>
+        <br /><h2>Электронная почта</h2>
+        <p>linataly@list.ru</p>
+    </div>
+
+</div>
+</div>
+
+{% endblock %}
+
+{%block service %}
+<section class="contact-form">
+    <h2 class="heading">Свяжитесь с нами</h2>
+    <p class="text"></p>
+
+</section>
+
+
+
+<section class="fit">
+    <div class="contentBox ">
+
+    <form class="form" method="post" action="{% url 'contact' %}">
+        {% csrf_token %}
+        <div class="inputBox">
+        {{ form.as_p }}
+        </div>
+        <div class="inputBox" >
+          <button type="submit" >Отправить</button>
+        </div>
+      </form>
+
+    </div>
+    <div class="par-con" data-parallax="scroll" data-z-index="1" data-image-src="{%static 'main/about.jpg' %}"></div>
+</section>
+{%endblock%}
+
+

@@ -1,0 +1,154 @@
+{% extends 'base.html'  %}
+{% load static %}
+{% block title %}
+ГрузПрофСервис
+{% endblock %}
+<!-- Banner(БАННЕР С ИЗОБРОЖЕНИЕМ И НАДПИСЬЮ)-->
+{% block banner %}
+    
+<div class="banner">
+   <div class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="{%static 'main/car1.jpg' %}">
+     <h2 class="title">ГрузПрофСервис</h2>
+     <p class="ex-info">Вы отдыхаете - мы доставляем!</p>
+
+   </div>
+
+
+
+
+
+</div>
+
+
+{% endblock %}
+
+<!--About-Us(О НАС)-->
+{% block about %}
+<section class="about">
+    <div class="contentBox">
+      <h2 class="heading">О Компании</h2>
+      <p>
+          Ваш груз доставим во время.
+          <br />
+          <br />За время осуществления деятельности по перевозкам груза  нашей компании было перевезено более 500 тысяч тонн груза.</p>
+</div>
+    <div class="par-lax" data-parallax="scroll" data-z-index="1" data-image-src="{%static 'main/363.jpg' %}"></div>
+</section>
+
+
+
+
+
+{% endblock %}
+
+<!--Service(УСЛУГИ)-->
+
+{% block service %}
+<section class="services">
+    <h2 class="headING">Наши Услуги</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  id est laborum.</p>
+    <div class="container">
+
+        <div class="plusBox">
+            <div>
+                <img src="{%static 'main/weight.png'  %}" />
+                <h2>Груз</h2>
+            </div>
+        </div>
+            <div class="plusBox">
+                <div>
+                    <img src="{%static 'main/broken-glass.png'  %}" />
+                    <h2>Хрупкий груз</h2>
+                </div>
+            </div>
+                  <div class="plusBox">
+                      <div>
+                          <img src="{%static 'main/delivery.png'  %}" />
+                          <h2>Транспортировка</h2>
+                      </div>
+                  </div>
+            </div>
+
+</section>
+
+{% endblock %}
+
+<!--Contacts(КОНТАКТЫ)-->
+
+{% block contact %}
+<section class="contact">
+    <h2 class="heading">Свяжитесь с нами</h2>
+    <p class="text"></p>
+
+</section>
+
+<section class="fit">
+    <div class="contentBox ">
+
+    <form class="form" method="post" action="{% url 'contact' %}">
+        {% csrf_token %}
+        <div class="inputBox">
+        {{ form.as_p }}
+        </div>
+        <div class="inputBox" >
+          <button type="submit" >Отправить</button>
+        </div>
+      </form>
+
+      <!-- <form class="form" method="post">
+
+            {% csrf_token %}
+
+            <div class="inputBox">
+                <label for="{{ form.company.id_for_label}}"></label>
+                <input type="text" name="company" placeholder="Введите название компании" />
+                {{form.company}}
+            </div>
+            <div class="inputBox" >
+          <label for="{{ form.trip.id_for_label}}"></label>
+             <input type="text" name="trip" placeholder="Введите маршрут" />
+        </div>
+        <div class="inputBox" >
+          <label for="{{ form.cargo.id_for_label}}"> </label>
+             <input type="text" name="cargo" placeholder="Введите наименование груза" />
+        </div>
+        <div class="inputBox" >
+          <label for="{{ form.sender.id_for_label}}"></label>
+             <input type="text" name="sender" placeholder="Введите ваш адрес электронной почты" />
+
+        </div>
+
+
+        <div class="inputBox" >
+          <label for="{{ form.phone.id_for_label}}">  </label>
+             <input type="text" name="phone" placeholder="Введите ваш контактый номер  телефона" />
+
+        </div>
+
+
+
+                
+        <div class="inputBox">
+            <label for="{{ form.message.id_for_label}}"></label>
+            <input type="text" name="message" placeholder="Напишите ваше сообщение для нас" />
+            {{form.message}}
+        </div>
+             <div class=" inputBox">
+
+                 <input type="submit" name="" value="Отправить" />
+
+             </div>
+    </form>-->
+
+    </div>
+
+
+       <div class="par-lax2" data-parallax="scroll" data-z-index="1" data-image-src="{%static 'main/23.jpg' %}"></div>
+    </section>
+      {% endblock %}
+
+
+
+      {% block featurette2 %}
+
+    {% endblock %}
